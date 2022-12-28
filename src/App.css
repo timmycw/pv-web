@@ -1,11 +1,45 @@
-.App {
-  text-align: center;
+.Body {
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+form {
+  width: 70%;
+  
 }
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-card-gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.carousel-item {
+  position: relative;
+}
+
+.carousel-item img {
+  filter: brightness(50%);
+}
+
+.carousel-item-text {
+  position: absolute;
+  font-size: 20px;
+  right: 10%;
+  left: 10%;
+  top: 10%;
+  color: white;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -13,26 +47,3 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
