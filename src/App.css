@@ -18,6 +18,11 @@ form {
   flex-wrap: wrap;
 }
 
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 
 html {
   scroll-behavior: smooth;
@@ -41,9 +46,7 @@ html {
 }
 
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a:visited {
+  color: black;
 }
 

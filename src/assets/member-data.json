@@ -1,26 +1,32 @@
 [
   {
     "name": "Kelly Wong Hiedepriem",
-    "image": "images/aftersun.png"
+    "role": "Founder",
+    "image": "/images/kelly.png"
   },
   {
     "name": "Nicole Burns",
-    "image": "images/tar.png"
+    "role": "National Co-Director",
+    "image": "images/nicole.png"
   },
   {
     "name": "Keyana Zahiri",
-    "image": "images/moonlight.png"
+    "role": "National Co-Director",
+    "image": "images/keyana.png"
   },
   {
     "name": "Saba Paracha",
-    "image": "images/decision.png"
+    "role": "Executive Board Member",
+    "image": "../images/saba.png"
   },
   {
     "name": "Anita Zahiri",
-    "image": "images/jfl.png"
+    "role": "Executive Board Member",
+    "image": "../images/anita.png"
   },
   {
     "name": "Anna Brinkhaus",
-    "image": "images/annabrinkhaus.png"
+    "role": "Social Media and Graphic Design Manager",
+    "image": "../images/anna.png"
   }
 ]

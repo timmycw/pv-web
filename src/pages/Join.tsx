@@ -1,9 +1,11 @@
 import React from "react";
 import Typography from '@mui/material/Typography';
 import JoinForm from '../components/JoinForm';
+
 import samplematerials1 from '../images/samplematerials1.png';
 import samplematerials2 from '../images/samplematerials2.png';
 import samplematerials3 from '../images/samplematerials3.png';
+
 
 function Join() {
   return (
@@ -37,7 +39,7 @@ function Join() {
         <img src={samplematerials2} />
         <br></br>
         <br></br>
-        <center><img src={samplematerials3} /></center>
+        <center><img src={samplematerials3}/></center>
         
     </div>
   );

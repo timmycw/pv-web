@@ -2,13 +2,10 @@ import React from 'react';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
-import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 import Testimonials from "../components/Testimonials";
 import { purple } from '@mui/material/colors';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
-import process from '../images/process.png';
-import comparison from '../images/comparison.png';
 import '../App.css';
 
 const theme = createTheme({

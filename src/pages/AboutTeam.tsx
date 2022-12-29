@@ -1,11 +1,10 @@
 import React from "react";
 import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
-import MemberData from '../assets/member-data.json';
 import TeamMember from '../components/TeamMember';
+import MemberData from '../assets/member-data.json';
 
 function AboutTeam() {
-  console.log(MemberData);
   return (
     <div className="Body">
         <Typography variant="h3" align="center" sx={{fontWeight: "bold"}}>Our Team</Typography>
@@ -13,10 +12,9 @@ function AboutTeam() {
         <Typography variant="h4" sx={{fontWeight: "bold"}}>2022 Team</Typography>
         <br></br>
         <div className="team-card-gallery">
-          {MemberData.map((item, _) => (
-            
-            <TeamMember item={item} key={item.name}></TeamMember>
-           ))}
+          {MemberData.map((item, i) => (
+            <TeamMember member={item}></TeamMember>
+           ))} 
         </div>
     </div>
   );

@@ -1,7 +1,11 @@
 import Card from '@mui/material/Card';
 export default function TeamMember(member : any) {
-  return (
+  return (  
   <div>
-     <Card variant="outlined">{member.name}</Card>
+     <Card>
+        <img src={require(member.image)}/>
+        {member.name}
+        
+    </Card>
   </div>);
 }
