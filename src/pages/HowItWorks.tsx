@@ -1,5 +1,6 @@
 import React from "react";
 import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
 import process from '../images/process.png';
 import comparison from '../images/comparison.png';
 
@@ -30,12 +31,16 @@ function HowItWorks() {
         There are different deadlines and processes, depending on the state. 
         Check out the <a href="/States">individual state pages</a> for more information on the Patient Voting process in your state. 
       </Typography>   
-      <center>
-        <img src={comparison} width="50%"></img>
-      </center>
-      <center>
-        <img src={process} width="50%"></img>
-      </center>
+      <br/>
+      <div className="process-images">
+        <center> 
+          <img src={comparison} width="60%"></img>
+        </center> 
+        <br/>
+        <center>
+          <img src={process} width="60%"></img>
+        </center>
+      </div>
     </div>
   );
 }

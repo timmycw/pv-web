@@ -8,9 +8,10 @@ function AboutProjects() {
   return (
      <div className="Body">
         <Typography variant="h3" align="center" sx={{fontWeight: "bold"}}>Projects</Typography>
-        <br></br>
+        <br/>
+        <br/>
         <div className="projects-grid">
-          <Box sx={{width: "35%"}}>
+          <Box sx={{width: "35%", marginLeft: "10%", marginRight: "auto", marginBottom: "10%"}}>
             <Typography variant="h6" sx={{fontWeight: "bold"}}>
               Emergency Absentee Voting for Hospitalized Patients and Voting During COVID-19: A 50-State Study
             </Typography>
@@ -31,7 +32,7 @@ function AboutProjects() {
             <br></br>
             <img src={project1} width="100%"/>
           </Box>
-          <Box sx={{width: "35%"}}>
+          <Box sx={{width: "35%", marginRight: "auto", marginBottom: "10%"}}>
             <Typography variant="h6" sx={{fontWeight: "bold"}}>            
               Emergency Mail-in Voting in Rhode Island: Protecting Civic Participation During COVID-19 and Beyond     
             </Typography>
@@ -51,7 +52,7 @@ function AboutProjects() {
             <br></br>
             <img src={project2} width="100%"/>
           </Box>
-          <Box sx={{width: "35%"}}>
+          <Box sx={{width: "35%", marginLeft: "10%", marginRight: "auto", marginBottom: "10%"}}>
             <Typography variant="h6" sx={{fontWeight: "bold"}}>            
               <a href="https://twitter.com/kellywongmd/status/1379890526598520833">SAEM 2021 Conference Presentation</a>  
             </Typography>

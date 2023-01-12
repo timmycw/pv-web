@@ -10,7 +10,7 @@ import DropdownMenu from './DropdownMenu';
 import { useNavigate } from "react-router-dom";
 import logo from '../images/logo.webp';
 
-const pages = ['Home', 'How it Works', 'States', 'Join'];
+const pages = ['Home', 'How it Works', 'How to Vote', 'States', 'Join'];
 
 
 
@@ -26,9 +26,9 @@ function NavBar() {
 
   return (
     <AppBar 
-    position="static"
+    position="sticky"
     sx={{
-      backgroundColor: "#4A5468",
+      backgroundColor: "#44556B",
       marginBlockEnd: "16px"
     }}>
       <Container maxWidth="xl">
@@ -43,10 +43,10 @@ function NavBar() {
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
+              fontFamily: 'sans-serif',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'inherit',
+              color: 'white',
               textDecoration: 'none',
             }}
           >

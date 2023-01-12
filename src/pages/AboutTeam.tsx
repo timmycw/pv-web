@@ -1,8 +1,18 @@
 import React from "react";
 import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
+import Box from '@mui/material/Box';
 import TeamMember from '../components/TeamMember';
 import MemberData from '../assets/member-data.json';
+
+import kelly from '../images/kelly.png';
+import nicole from '../images/nicole.png';
+import keyana from '../images/keyana.png';
+import saba from '../images/saba.png';
+import anita from '../images/anita.png';
+import anna from '../images/anna.png';
+
+const profilePics = [kelly, nicole, keyana, saba, anita, anna];
 
 function AboutTeam() {
   return (
@@ -13,7 +23,15 @@ function AboutTeam() {
         <br></br>
         <div className="team-card-gallery">
           {MemberData.map((item, i) => (
-            <TeamMember member={item}></TeamMember>
+            <Box sx={{width: "30%", marginBottom: "5%"}}>
+              <Card sx={{}}>
+                <img src={profilePics[i]} width="100%" height="80%"/>
+                <br/>
+                <Typography variant="h5" sx={{fontWeight: "bold"}}>&nbsp; &nbsp;{item.name}</Typography>
+                <br/>
+                <Typography variant="body1">&nbsp; &nbsp; &nbsp;{item.role}</Typography>
+              </Card>
+            </Box>
            ))} 
         </div>
     </div>

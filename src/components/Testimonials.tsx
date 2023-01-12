@@ -13,11 +13,10 @@ export default class Testimonials extends Component {
   render() {
     return (
       
-      <Box sx={{border: "1"}}>
-        
+      <Box>
         <Carousel>
             <div className="carousel-item">
-            <img src={carousel2} width="100%"/>
+            <img src={carousel2} width="99%" height="101%"/>
                 <div className="carousel-item-text">
                 <Typography variant="h4" align="center" sx={{fontWeight: "bold"}}> WHY WE DO WHAT WE DO</Typography>
                 <br></br>
@@ -40,7 +39,7 @@ export default class Testimonials extends Component {
             
             
             <div className="carousel-item">
-            <img src={carousel3} width="100%"/>
+            <img src={carousel3} width="99%" height="101%"/>
                 <div className="carousel-item-text">
                     <Typography variant="h4" align="center" sx={{fontWeight: "bold"}}> WHY WE DO WHAT WE DO</Typography>
                     <br></br>
@@ -60,7 +59,7 @@ export default class Testimonials extends Component {
             </div>
             
             <div className="carousel-item">
-            <img src={carousel1} width="100%"/>
+            <img src={carousel1} width="99%" height="101%"/>
                 <div className="carousel-item-text">
                     <Typography variant="h4" align="center" sx={{fontWeight: "bold"}}> WHY WE DO WHAT WE DO</Typography>
                     <br></br>

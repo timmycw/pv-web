@@ -52,33 +52,55 @@ function Home() {
       <br></br>
       <Typography variant="h4" align="center" sx={{fontWeight: "bold"}}>What We Provide</Typography>
       <br></br>
-      <Typography variant="body1">
+      <Typography variant="body1" align="center">
         
         <b>All of the info in one centralized location for patients, loved ones, and health care workers</b>
-        <br></br>
+        <br/>
             The exact process for Emergency Absentee Ballots varies from state-to-state. 
             All of this info is scattered on 50 different state election websites (if you can even find it!).
             It's all centralized here on http://patientvoting.com so it's easy for patients, their loved ones, and health care workers to find it.
         
-        <br></br>
+        <br/>
+        <br/>
         <b>A Patient Voting plan unique to your hospital.</b>
-        <br></br>
+        <br/>
         We can schedule a call with your dedicated team to 
         learn more about your hospital and how this would work best. We can customize materials specific to your hospital's plan.
-        <br></br>
+        <br/>
+        <br/>
         <b>Free customized templates for voting materials featuring your hospital logo and branding</b>
-        <br></br>
+        <br/>
+        <br/>
         <b>State-by-state information for you to include on your hospital intranet, newsletter, department emails, weekly bulletins, etc.</b>
-        <br></br>
+        <br/>
       </Typography>
 
 
       <br></br>
       <br></br>
       <br></br>
-
-      <Box sx={{display: "flex", justifyContent: "center"}}>
-        <Button href="/How it Works" size="large" color="secondary" variant="outlined"> Learn how patient voting works </Button>
+      <Box sx={{display: "flex", justifyContent: "space-between"}}>
+        <Box sx={{display: "flex", justifyContent: "center", width: "33%"}}>
+          <Button href="/How it Works" size="large" color="secondary" variant="outlined" sx={{border: "2px solid",
+         "&:hover": {
+              fontWeight: "bold",
+              border: "2px solid"
+            }}}> How it works </Button>
+        </Box>
+        <Box sx={{display: "flex", justifyContent: "center", width: "33%"}}>
+          <Button href="/How to Vote" size="large" color="secondary" variant="outlined" sx={{border: "2px solid",
+         "&:hover": {
+              fontWeight: "bold",
+              border: "2px solid"
+            }}}> How to vote </Button>
+        </Box>
+        <Box sx={{display: "flex", justifyContent: "center", width: "33%"}}>
+          <Button href="/States" size="large" color="secondary" variant="outlined" sx={{border: "2px solid",
+         "&:hover": {
+              fontWeight: "bold",
+              border: "2px solid"
+            }}}> Find your state </Button>
+        </Box>
       </Box>
       <br></br>
       <br></br>

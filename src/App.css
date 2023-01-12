@@ -8,6 +8,11 @@ form {
   
 }
 
+.process-images img {
+  border: 4px solid purple;
+  border-radius: 10px;
+}
+
 .form-buttons {
   display: flex;
   justify-content: space-between;
@@ -16,12 +21,18 @@ form {
 .team-card-gallery {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.button-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .projects-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
 }
 
 html {
@@ -34,6 +45,8 @@ html {
 
 .carousel-item img {
   filter: brightness(50%);
+  border: 4px solid purple;
+  border-radius: 10px;
 }
 
 .carousel-item-text {
