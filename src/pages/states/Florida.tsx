@@ -16,12 +16,12 @@ import {styled} from '@mui/material/styles';
 import Deadlines from '../../components/Deadlines';
 
 
-const deadlines = ["friday", "OCT 24", 
-"EMERGENCY APPLICATION START", "Patients may start requesting a special elections board to deliver their ballot",
-"monday 5PM", "NOV 7", 
-"EMERGENCY APPLICATION DEADLINE", "Deadline to inform your county recorder's office of your hospitalization and request ballot delivery", 
-"tuesday 8PM", "NOV 8", 
-"EMERGENCY BALLOT DEADLINE", "An in-person team will return your ballot by this deadline"];
+const deadlines = ["saturday", "OCT 29", 
+"EMERGENCY APPLICATION START", "Patients may start voting in hospitals. This start date may be later depending on the county.",
+"monday 7PM", "NOV 7", 
+"EMERGENCY APPLICATION DEADLINE", "Completed application must be returned to your county's Supervisor of Elections.", 
+"tuesday 7PM", "NOV 8", 
+"EMERGENCY BALLOT DEADLINE", "Voted ballot must be returned to Supervisor of Elections' office no later than 7:00 pm (local time) on Election Day."];
 
 
 const CheckIcon = styled(CheckBoxIcon)(({ theme }) => ({
@@ -34,13 +34,13 @@ const DangerIcon = styled(DangerousIcon)(({ theme }) => ({
   fill: 'red'
 }));
 
-function Arizona() {
+function Florida() {
   return (
     <div className="Body">
        <Box sx={{display: "flex", justifyContent: "space-between", backgroundColor: "#44556B"}}>
             <Box sx={{display: "flex", justifyContent: "left", margin: "2%", width: "50%"}}>
                 <Box sx={{margin: "2%"}}>
-                    <Typography variant="h3" sx={{color: '#f56c49', fontWeight: "bold"}}>ARIZONA</Typography>
+                    <Typography variant="h3" sx={{color: '#f56c49', fontWeight: "bold"}}>FLORIDA</Typography>
                     <Typography variant="h6" sx={{color: '#f56c49'}}>PATIENT VOTING PROCESS</Typography>
                 </Box>
             </Box>
@@ -54,28 +54,29 @@ function Arizona() {
         
         <br/>
         <Typography fontSize="18px" >
-            If you are hospitalized between <b>October 28th and November 7th</b>, you are eligible to vote by the following steps:
+            If you are hospitalized between <b>October 29th and November 7th</b>, you are eligible to vote by the following steps:
         
         
         <List sx={{ listStyleType: "none", pl: 4, '& .MuiListItem-root': {display: 'list-item'} }}>
             <ListItem>
                 1. Check your voter registration at <a href="patientvoting.com/check"> www.patientvoting.com/check</a>.
             </ListItem>
-            <ListItem>2. Inform your county recorder's office of your hospitalization.
+            <ListItem>2. Complete an emergency ballot application. 
                 <List>
                     <ListItem>
                         <Box sx={{ display: "flex", alignItems: "center"}}>
                             <CheckIcon/>
                             <ListItem>
-                                You can write down a written request for an absentee ballot and sign it, attesting to your hospitalization.
+                                You can fill out <b>Form DS-DE 37</b> indicating the designee who will be picking up your ballot.
                             </ListItem>
                         </Box>
                     </ListItem>
                     <ListItem>
                         <Box sx={{ display: "flex", alignItems: "center"}}>
-                            <CheckIcon/>
+                            <CautionIcon/>
                             <ListItem>
-                                You can also file a verbal request by calling your local County Recorder's Office.
+                                If you are making your request on Election Day itself, you must fill out a separate <b>Election Day Vote-by-Mail Ballot 
+                                    Delivery Affidavit (Form DS-DE 136)</b> affirming that you have an emergency keeping you from voting in-person.
                             </ListItem>
                         </Box>
                     </ListItem>
@@ -93,4 +94,4 @@ function Arizona() {
   );
 }
 
-export default Arizona;
+export default Florida;

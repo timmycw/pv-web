@@ -31,7 +31,7 @@ function DropdownMenu() {
         onClick={handleClick}
         onMouseOver={handleClick}
         sx={{
-          color: "white"
+          color: "white",
         }}
       >
         About

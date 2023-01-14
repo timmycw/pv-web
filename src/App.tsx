@@ -17,24 +17,64 @@ import Alaska from './pages/states/Alaska';
 import Arizona from './pages/states/Arizona';
 import Arkansas from './pages/states/Arkansas';
 import California from './pages/states/California';
+import Colorado from './pages/states/Colorado';
+import Connecticut from './pages/states/Connecticut';
+import Delaware from './pages/states/Delaware';
+import DistrictofColumbia from './pages/states/DistrictofColumbia';
+import Florida from './pages/states/Florida';
+import Georgia from './pages/states/Georgia';
+import Hawaii from './pages/states/Hawaii';
+import Idaho from './pages/states/Idaho';
+import Illinois from './pages/states/Illinois';
+import Indiana from './pages/states/Indiana';
+import Iowa from './pages/states/Iowa';
+import Kansas from './pages/states/Kansas';
+import Kentucky from './pages/states/Kentucky';
+import Louisiana from './pages/states/Louisiana';
+import Maine from './pages/states/Maine';
+import Maryland from './pages/states/Maryland';
+import Massachusetts from './pages/states/Massachusetts';
+import Michigan from './pages/states/Michigan';
+
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+
+import '@fontsource/roboto';
+
 import './App.css';
 
 const theme = createTheme({
   palette: {
     primary: {
-      // Purple and green play nicely together.
-      main: '#11cb5f',
-      
-      
+      main: "#44556B",
     },
     secondary: {
-      // This is green.A700 as hex.
-      main: purple[500],
-      
+      main: '#f56c49',
     },
   },
+  typography: {
+    fontFamily: [
+      'Roboto',
+      'sans-serif',
+    ].join(','),
+    h3: {
+      color: "#44556B",
+    },
+    h4: {
+      color: "#44556B",
+      fontWeight: "bold",
+    },
+    h5: {
+      color: "#44556B",
+    },
+    h6: {
+      color: "#44556B",
+    },
+    button: {
+      fontWeight: "bold",
+    }
+  },
 });
+
 
 
 function App() {
@@ -58,6 +98,24 @@ function App() {
           <Route path="/States/Arizona" element={<Arizona />} />
           <Route path="/States/Arkansas" element={<Arkansas />} />
           <Route path="/States/California" element={<California />} />
+          <Route path="/States/Colorado" element={<Colorado />} />
+          <Route path="/States/Connecticut" element={<Connecticut />} />
+          <Route path="/States/Delaware" element={<Delaware />} />
+          <Route path="/States/District of Columbia" element={<DistrictofColumbia />} />
+          <Route path="/States/Florida" element={<Florida />} />
+          <Route path="/States/Georgia" element={<Georgia />} />
+          <Route path="/States/Hawaii" element={<Hawaii />} />
+          <Route path="/States/Idaho" element={<Idaho />} />
+          <Route path="/States/Illinois" element={<Illinois />} />
+          <Route path="/States/Indiana" element={<Indiana />} />
+          <Route path="/States/Iowa" element={<Iowa />} />
+          <Route path="/States/Kansas" element={<Kansas />} />
+          <Route path="/States/Kentucky" element={<Kentucky />} />
+          <Route path="/States/Louisiana" element={<Louisiana />} />
+          <Route path="/States/Maine" element={<Maine />} />
+          <Route path="/States/Maryland" element={<Maryland />} />
+          <Route path="/States/Massachusetts" element={<Massachusetts />} />
+          <Route path="/States/Michigan" element={<Michigan />} />
 
         </Routes>   
         <Footer/>

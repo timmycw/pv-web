@@ -8,26 +8,10 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 import '../App.css';
 
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: '#11cb5f',
-      
-      
-    },
-    secondary: {
-      // This is green.A700 as hex.
-      main: purple[500],
-      
-    },
-  },
-});
 
 
 function Home() {
-  return (
-    
-    <ThemeProvider theme={theme}>  
+  return ( 
       <div className="Body">
 
       <Typography variant="h5" align="center">Welcome to</Typography>
@@ -58,7 +42,7 @@ function Home() {
         <br/>
             The exact process for Emergency Absentee Ballots varies from state-to-state. 
             All of this info is scattered on 50 different state election websites (if you can even find it!).
-            It's all centralized here on http://patientvoting.com so it's easy for patients, their loved ones, and health care workers to find it.
+            It's all centralized here on <a href="http://patientvoting.com">patientvoting.com</a> so it's easy for patients, their loved ones, and health care workers to find it.
         
         <br/>
         <br/>
@@ -83,21 +67,18 @@ function Home() {
         <Box sx={{display: "flex", justifyContent: "center", width: "33%"}}>
           <Button href="/How it Works" size="large" color="secondary" variant="outlined" sx={{border: "2px solid",
          "&:hover": {
-              fontWeight: "bold",
               border: "2px solid"
             }}}> How it works </Button>
         </Box>
         <Box sx={{display: "flex", justifyContent: "center", width: "33%"}}>
           <Button href="/How to Vote" size="large" color="secondary" variant="outlined" sx={{border: "2px solid",
          "&:hover": {
-              fontWeight: "bold",
               border: "2px solid"
             }}}> How to vote </Button>
         </Box>
         <Box sx={{display: "flex", justifyContent: "center", width: "33%"}}>
           <Button href="/States" size="large" color="secondary" variant="outlined" sx={{border: "2px solid",
          "&:hover": {
-              fontWeight: "bold",
               border: "2px solid"
             }}}> Find your state </Button>
         </Box>
@@ -111,7 +92,6 @@ function Home() {
       <br></br>
       <br></br>
     </div>
-    </ThemeProvider>
   );
 }
 

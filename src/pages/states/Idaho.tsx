@@ -12,16 +12,16 @@ import logo from '../../images/statepvlogo.png';
 
 import {styled} from '@mui/material/styles';
 
+
 import Deadlines from '../../components/Deadlines';
-import { Report } from "@mui/icons-material";
 
 
-const deadlines = ["tuesday", "NOV 1", 
-"EMERGENCY APPLICATION START", "Patients may start voting in hospitals. Before this day, you may apply for a normal absentee ballot with an application via mail or electronically",
-"tuesday 1:30PM", "NOV 8", 
-"EMERGENCY APPLICATION DEADLINE", "Completed application must be returned to your County Clerk.", 
-"tuesday 7:30PM", "NOV 8", 
-"EMERGENCY BALLOT DEADLINE", "Voted ballot must be returned to your County Clerk"];
+const deadlines = ["friday", "NOV 3", 
+"EMERGENCY APPLICATION START", "Patients may start voting in hospitals.",
+"monday 5PM", "NOV 7", 
+"EMERGENCY APPLICATION DEADLINE", "Completed application must be returned to one of your County Clerks. Check addresses at https://voteidaho.gov/county-clerks/.", 
+"tuesday 8PM", "NOV 8", 
+"EMERGENCY BALLOT DEADLINE", "Voted ballot must be returned to your County Clerks."];
 
 
 const CheckIcon = styled(CheckBoxIcon)(({ theme }) => ({
@@ -34,13 +34,13 @@ const DangerIcon = styled(DangerousIcon)(({ theme }) => ({
   fill: 'red'
 }));
 
-function Arkansas() {
+function Idaho() {
   return (
     <div className="Body">
        <Box sx={{display: "flex", justifyContent: "space-between", backgroundColor: "#44556B"}}>
             <Box sx={{display: "flex", justifyContent: "left", margin: "2%", width: "50%"}}>
                 <Box sx={{margin: "2%"}}>
-                    <Typography variant="h3" sx={{color: '#f56c49', fontWeight: "bold"}}>ARKANSAS</Typography>
+                    <Typography variant="h3" sx={{color: '#f56c49', fontWeight: "bold"}}>IDAHO</Typography>
                     <Typography variant="h6" sx={{color: '#f56c49'}}>PATIENT VOTING PROCESS</Typography>
                 </Box>
             </Box>
@@ -54,20 +54,37 @@ function Arkansas() {
         
         <br/>
         <Typography fontSize="18px" >
-            If you are hospitalized between <b>November 1st and November 8th</b>, you are eligible to vote by the following steps:
+            If you are hospitalized <b>before November 1st</b>, you are eligible to vote by the following steps:
         
         
         <List sx={{ listStyleType: "none", pl: 4, '& .MuiListItem-root': {display: 'list-item'} }}>
             <ListItem>
                 1. Check your voter registration at <a href="patientvoting.com/check"> www.patientvoting.com/check</a>.
             </ListItem>
-            <ListItem>2. Complete ballot application.
+            <ListItem>2. Complete an application for your emergency absentee ballot:
+
+                <List>
+                    <ListItem>
+                        <Box sx={{ display: "flex", alignItems: "center"}}>
+                            <CautionIcon/>
+                            <ListItem>
+                                This application is not available online so you will have to contact your County Clerk for the necessary documentation to fill out.
+                            </ListItem>
+                        </Box>
+                    </ListItem>
+                            
+                </List>
+                
+            </ListItem>
+            <ListItem>3. Return ballot application to your County Clerk with enough time to return your ballot by <b>November 8th 8PM</b>.
+                 Check <a href="https://idahovotes.gov/county-clerks/">idahovotes.gov/county-clerks</a> for addresses. You may deliver your ballot application:
+
                 <List>
                     <ListItem>
                         <Box sx={{ display: "flex", alignItems: "center"}}>
                             <CheckIcon/>
                             <ListItem>
-                                Fill out an absentee ballot application..
+                                You may submit your application to your County Clerk by email.
                             </ListItem>
                         </Box>
                     </ListItem>
@@ -75,47 +92,27 @@ function Arkansas() {
                         <Box sx={{ display: "flex", alignItems: "center"}}>
                             <CautionIcon/>
                             <ListItem>
-                                You must additionally file with the County Clerk an affidavit from the administrative head of a hospital or nursing home
-                                verifying that you are currently hospitalized.
+                                You may submit your application by mail. Depending on when you're hospitalized, if you submit your ballot application by mail, it may not arrive in time to the BOE by the required deadline.
+                            </ListItem>
+                        </Box>
+                    </ListItem>
+                    <ListItem>
+                        <Box sx={{ display: "flex", alignItems: "center"}}>
+                            <DangerIcon/>
+                            <ListItem>
+                                You may not submit your application via an authorized agent.
                             </ListItem>
                         </Box>
                     </ListItem>
                    
                 </List>
-                
+            
             </ListItem>
-            <ListItem>3. Return ballot application to Board of Canvassers by November 8th 1:30PM. 
-                Check <a href="https://www.sos.arkansas.gov/uploads/elections/ARCountyClerks.pdf">sos.arkansas.gov/uploads/elections/ARCountyClerks.pdf</a> for addresses. You may deliver your ballot application:
-                <List>
-                    <ListItem>
-                        <Box sx={{ display: "flex", alignItems: "center"}}>
-                            <CheckIcon/>
-                            <ListItem>
-                                By authorized agent, such as a family member.
-                            </ListItem>
-                        </Box>
-                    </ListItem>
-                    <ListItem>
-                        <Box sx={{ display: "flex", alignItems: "center"}}>
-                            <CautionIcon/>
-                            <ListItem>By mail. This is only possible <b>before</b> November 1st. Depending on when you're hospitalized, if you
-                            submit your ballot application by mail, it may not arrive in time to the BOE by the required deadline.
-                            </ListItem>
-                        </Box>
-                    </ListItem>
-                    <ListItem>
-                        <Box sx={{ display: "flex", alignItems: "center"}}>
-                            <CautionIcon/>
-                            <ListItem>By electronic means. This is only possible <b>after</b> November 1st. 
-                            </ListItem>
-                        </Box>
-                    </ListItem>
-                </List>
+            <ListItem>4. Receive ballot. You may obtain your ballot by mail or, in certain counties, through personal delivery by an in-person ballot delivery team sent by your County Clerk.
             </ListItem>
-            <ListItem>4. Receive ballot.</ListItem> 
             <ListItem>5. Vote!</ListItem>
-            <ListItem>6. Return completed ballot to your county clerk by <b>November 8th 7:30PM</b> by your authorized agent.
-               
+            <ListItem>6. Return completed ballot to Board of Canvassers by <b>November 8th 8PM</b> by mail or via the in-person ballot 
+                delivery team sent to you. Check <a href="https://idahovotes.gov/county-clerks/">idahovotes.gov/county-clerks</a> for addresses.
             </ListItem>
         </List>
         </Typography>
@@ -123,4 +120,4 @@ function Arkansas() {
   );
 }
 
-export default Arkansas;
+export default Idaho;

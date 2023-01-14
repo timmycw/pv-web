@@ -8,11 +8,12 @@ export default function Deadlines(deadlines : string[]) {
   return (  
   <div>
         <Paper
-        variant="outlined"
+        
       sx={{
+        boxShadow: "none",
         p: 2,
         margin: 'auto',
-        width: "85%",
+        width: "90%",
         flexGrow: 1,
         borderColor: "black",
         backgroundColor: (theme) =>
@@ -20,7 +21,8 @@ export default function Deadlines(deadlines : string[]) {
       }}
     >
      <Grid container direction="column" spacing={2} sx={{margin: "5px"}}>
-      <Grid container direction="row" spacing={2}> 
+      <Divider sx={{backgroundColor: "black", borderBottomWidth: 4, margin: "1% 2% 1% 0%"}}/>
+      <Grid container direction="row" spacing={2} sx={{alignItems:"center"}}> 
         
             <Grid item xs>
                 <Typography variant="h6" sx={{fontWeight: "bold"}}>
@@ -46,7 +48,7 @@ export default function Deadlines(deadlines : string[]) {
 
      <Divider sx={{backgroundColor: "black", borderBottomWidth: 4, margin: "1% 2% 1% 0%"}}/>
      
-     <Grid container direction="row" spacing={2}> 
+     <Grid container direction="row" spacing={2} sx={{alignItems:"center"}}> 
             <Grid item xs>
                 <Typography variant="h6" sx={{fontWeight: "bold"}}>
                     {deadlines[4]}
@@ -70,7 +72,7 @@ export default function Deadlines(deadlines : string[]) {
 
      <Divider sx={{backgroundColor: "black", borderBottomWidth: 4, margin: "1% 2% 1% 0%"}}/>
 
-     <Grid container direction="row" spacing={2}> 
+     <Grid container direction="row" spacing={2} sx={{alignItems:"center"}}> 
             <Grid item xs>
                 <Typography variant="h6" sx={{fontWeight: "bold"}}>
                     {deadlines[8]}

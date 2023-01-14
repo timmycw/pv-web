@@ -46,7 +46,7 @@ function NavBar() {
               fontFamily: 'sans-serif',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'white',
+              color: '#f56c49',
               textDecoration: 'none',
             }}
           >
@@ -61,7 +61,11 @@ function NavBar() {
               <Button
                 key={page}     
                 onClick={() => redirectRoute("/" + page)}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{ my: 2, color: 'white', display: 'block',
+              "&:hover": {
+                fontWeight: "bold",
+                color: "orange",
+              } }}
               >
                 {page}
               </Button>

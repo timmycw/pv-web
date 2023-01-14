@@ -24,12 +24,12 @@ function AboutTeam() {
         <div className="team-card-gallery">
           {MemberData.map((item, i) => (
             <Box sx={{width: "30%", marginBottom: "5%"}}>
-              <Card sx={{}}>
+              <Card elevation={0} sx={{border: "2px solid #44556B", borderRadius: "5px"}}>
                 <img src={profilePics[i]} width="100%" height="80%"/>
                 <br/>
                 <Typography variant="h5" sx={{fontWeight: "bold"}}>&nbsp; &nbsp;{item.name}</Typography>
                 <br/>
-                <Typography variant="body1">&nbsp; &nbsp; &nbsp;{item.role}</Typography>
+                <Typography variant="body1" sx={{color: '#f56c49'}}>&nbsp; &nbsp; &nbsp;{item.role}</Typography>
               </Card>
             </Box>
            ))} 

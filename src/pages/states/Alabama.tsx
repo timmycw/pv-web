@@ -8,6 +8,8 @@ import CheckBoxIcon from '@mui/icons-material/CheckBox';
 import ReportProblemIcon from '@mui/icons-material/ReportProblem';
 import DangerousIcon from '@mui/icons-material/Dangerous';
 
+import logo from '../../images/statepvlogo.png';
+
 import {styled} from '@mui/material/styles';
 
 import Deadlines from '../../components/Deadlines';
@@ -33,16 +35,21 @@ const DangerIcon = styled(DangerousIcon)(({ theme }) => ({
 function Alabama() {
   return (
     <div className="Body">
-        <Typography variant="h3" align="center" sx={{fontWeight: "bold"}}>ALABAMA</Typography>
-        <Typography variant="h6" align="center" sx={{fontStyle: "italic"}}>How to vote from your hospital bed</Typography>
-        <br/>
-        <Typography variant="h5" align="center" sx={{fontWeight: "bold"}}>LINKS</Typography>
-        <br/>
-        <Typography variant="h5" align="center" sx={{fontWeight: "bold"}}>DEADLINES</Typography>
+        <Box sx={{display: "flex", justifyContent: "space-between", backgroundColor: "#44556B"}}>
+            <Box sx={{display: "flex", justifyContent: "left", margin: "2%", width: "50%"}}>
+                <Box sx={{margin: "2%"}}>
+                    <Typography variant="h3" sx={{color: '#f56c49', fontWeight: "bold"}}>ALABAMA</Typography>
+                    <Typography variant="h6" sx={{color: '#f56c49'}}>PATIENT VOTING PROCESS</Typography>
+                </Box>
+            </Box>
+            <Box>
+                <img src={logo} width="80%"/>
+            </Box>
+        </Box>
         <br/>
             <Deadlines {...deadlines}></Deadlines>
         <br/>
-        <Typography variant="h5" align="center"sx={{fontWeight: "bold"}}>STEPS TO VOTE</Typography>
+        
         <br/>
         <Typography fontSize="18px" >
             If you are hospitalized between November 3rd and November 8th, you are eligible to vote by the following steps:
@@ -53,7 +60,7 @@ function Alabama() {
                 1. Check your voter registration at <a href="patientvoting.com/check"> www.patientvoting.com/check</a>.
             </ListItem>
             <ListItem>2. Complete Emergency Absentee Ballot Application which can be found on Absentee
-                Election Manager website (HERE). Make sure to:
+                Election Manager website (<a href="https://www.sos.alabama.gov/city-county-lookup/absentee-election-manager">sos.alabama.gov/city-county-lookup/absentee-election-manager</a>). Make sure to:
                 <List>
                     <ListItem>
                         <Box sx={{ display: "flex", alignItems: "center"}}>
@@ -85,7 +92,7 @@ function Alabama() {
                 
             </ListItem>
             <ListItem>3. Return ballot application to your county's Absentee Election Manager by <b>November 8th 12 PM</b>. Check 
-                HERE for addresses. You may deliver your ballot application:
+                <a href="https://www.sos.alabama.gov/city-county-lookup/absentee-election-manager"> sos.alabama.gov/city-county-lookup/absentee-election-manager</a> for addresses. You may deliver your ballot application:
                 <List>
                     <ListItem>
                         <Box sx={{ display: "flex", alignItems: "center"}}>
@@ -116,7 +123,7 @@ function Alabama() {
             <ListItem>4. Receive ballot.</ListItem>
             <ListItem>5. Vote!</ListItem>
             <ListItem>6. Return completed ballot to your county's Absentee Election Manager by <b>November 8th 12 PM</b> by authorized agent.
-                Check HERE for addresses. 
+                Check <a href="https://www.sos.alabama.gov/city-county-lookup/absentee-election-manager">sos.alabama.gov/city-county-lookup/absentee-election-manager</a> for addresses. 
             </ListItem>
         </List>
         </Typography>

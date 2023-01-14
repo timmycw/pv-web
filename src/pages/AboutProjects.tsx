@@ -54,7 +54,10 @@ function AboutProjects() {
           </Box>
           <Box sx={{width: "35%", marginLeft: "10%", marginRight: "auto", marginBottom: "10%"}}>
             <Typography variant="h6" sx={{fontWeight: "bold"}}>            
-              <a href="https://twitter.com/kellywongmd/status/1379890526598520833">SAEM 2021 Conference Presentation</a>  
+              SAEM 2021 Conference Presentation
+            </Typography>
+            <Typography variant="body1">
+              <a href="https://twitter.com/kellywongmd/status/1379890526598520833">Conference Presentation</a> 
             </Typography>
             <br></br>
             <Typography variant="body1">

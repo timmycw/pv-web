@@ -18,7 +18,7 @@ export default class Testimonials extends Component {
             <div className="carousel-item">
             <img src={carousel2} width="99%" height="101%"/>
                 <div className="carousel-item-text">
-                <Typography variant="h4" align="center" sx={{fontWeight: "bold"}}> WHY WE DO WHAT WE DO</Typography>
+                <Typography variant="h4" align="center" sx={{color: "white", fontWeight: "bold"}}> WHY WE DO WHAT WE DO</Typography>
                 <br></br>
                 <br></br>
                 <br></br>
@@ -41,7 +41,7 @@ export default class Testimonials extends Component {
             <div className="carousel-item">
             <img src={carousel3} width="99%" height="101%"/>
                 <div className="carousel-item-text">
-                    <Typography variant="h4" align="center" sx={{fontWeight: "bold"}}> WHY WE DO WHAT WE DO</Typography>
+                    <Typography variant="h4" align="center" sx={{color: "white", fontWeight: "bold"}}> WHY WE DO WHAT WE DO</Typography>
                     <br></br>
                     <br></br> 
                     <br></br>
@@ -61,7 +61,7 @@ export default class Testimonials extends Component {
             <div className="carousel-item">
             <img src={carousel1} width="99%" height="101%"/>
                 <div className="carousel-item-text">
-                    <Typography variant="h4" align="center" sx={{fontWeight: "bold"}}> WHY WE DO WHAT WE DO</Typography>
+                    <Typography variant="h4" align="center" sx={{color: "white", fontWeight: "bold"}}> WHY WE DO WHAT WE DO</Typography>
                     <br></br>
                     <br></br>
                     <br></br>

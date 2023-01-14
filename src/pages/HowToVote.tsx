@@ -14,8 +14,7 @@ function States() {
         <br/>
         <Box sx={{display: "flex", justifyContent: "center"}}>
           <Button href="/States" size="large" color="secondary" variant="outlined" sx={{width: "50%", border: "2px solid", 
-              "&:hover": {
-              fontWeight: "bold",
+              "&:hover": {            
               border: "2px solid"
             }}}> Find your state </Button>
         </Box>
@@ -29,40 +28,35 @@ function States() {
           <Box sx={{ width: "47%", marginBottom: "1%"}}>
             <Button href="#1" size="large" color="secondary" variant="outlined" 
             sx={{width: "100%", border: "2px solid", 
-              "&:hover": {
-              fontWeight: "bold",
+              "&:hover": {           
               border: "2px solid"
             }}}> I'm a hospitalized patient</Button>
           <center><a href="#1"><ArrowDropDownRoundedIcon color="secondary" fontSize="large"/></a></center>
           </Box>
           <Box sx={{width: "47%", marginBottom: "1%"}}>
             <Button href="#2" size="large" color="secondary" variant="outlined" sx={{width: "100%", border: "2px solid", 
-              "&:hover": {
-              fontWeight: "bold",
+              "&:hover": {            
               border: "2px solid"
             }}}> I'm a healthcare provider of the patient </Button>
             <center><a href="#2"><ArrowDropDownRoundedIcon color="secondary" fontSize="large"/></a></center>
           </Box>
           <Box sx={{width: "47%", marginBottom: "1%"}}> 
             <Button href="#3" size="large" color="secondary" variant="outlined" sx={{width: "100%", border: "2px solid", 
-              "&:hover": {
-              fontWeight: "bold",
+              "&:hover": {          
               border: "2px solid"
             }}}> I'm the parent of a hospitalized child </Button>
             <center><a href="#3"><ArrowDropDownRoundedIcon color="secondary" fontSize="large"/></a></center>
           </Box>
           <Box sx={{width: "47%", marginBottom: "1%"}}>
             <Button href="#4" size="large" color="secondary" variant="outlined" sx={{width: "100%", border: "2px solid", 
-              "&:hover": {
-              fontWeight: "bold",
+              "&:hover": {        
               border: "2px solid"
             }}}> I'm a friend/family member of the patient </Button>
             <center><a href="#4"><ArrowDropDownRoundedIcon color="secondary" fontSize="large"/></a></center>
           </Box>
           <Box sx={{width: "47%", marginBottom: "1%"}}>
             <Button href="#5" size="large" color="secondary" variant="outlined" sx={{width: "100%", border: "2px solid", 
-              "&:hover": {
-              fontWeight: "bold",
+              "&:hover": {   
               border: "2px solid"
             }}}> I'm a recently discharged patient </Button>
             <center><a href="#5"><ArrowDropDownRoundedIcon color="secondary" fontSize="large"/></a></center>
@@ -70,7 +64,6 @@ function States() {
           <Box sx={{width: "47%", marginBottom: "1%"}}>
             <Button href="#6" size="large" color="secondary" variant="outlined" sx={{width: "100%", border: "2px solid", 
               "&:hover": {
-              fontWeight: "bold",
               border: "2px solid"
             }}}> I'm worried I may become hospitalized </Button>
             <center><a href="#6"><ArrowDropDownRoundedIcon color="secondary" fontSize="large"/></a></center>
@@ -78,7 +71,7 @@ function States() {
 
         </div>
 
-        <Box sx={{border: "4px solid", borderColor: "purple", borderRadius: '10px', marginBottom: "5%"}} id="1">
+        <Box sx={{border: "4px solid", borderColor: "#44556B", borderRadius: '10px', marginBottom: "5%"}} id="1">
           <Box sx={{margin: "2% 5% 2% 5%"}}>
           <Typography variant="h4" align="center" sx={{fontWeight: "bold"}}>I'm a hospitalized patient</Typography>
           <br/>
@@ -132,7 +125,7 @@ function States() {
         </Box>
 
 
-        <Box sx={{border: "4px solid", borderColor: "purple", borderRadius: '10px', marginBottom: "5%"}} id="2">
+        <Box sx={{border: "4px solid", borderColor: "#44556B", borderRadius: '10px', marginBottom: "5%"}} id="2">
           <Box sx={{margin: "2% 5% 2% 5%"}}>
           <Typography variant="h4" align="center" sx={{fontWeight: "bold"}}>I'm a healthcare provider</Typography>
           <br/>
@@ -183,14 +176,14 @@ function States() {
           </Box>
         </Box>
 
-        <Box id="3" sx={{border: "4px solid", borderColor: "purple", borderRadius: '10px', marginBottom: "5%"}}>
+        <Box id="3" sx={{border: "4px solid", borderColor: "#44556B", borderRadius: '10px', marginBottom: "5%"}}>
           <Box sx={{margin: "2% 5% 2% 5%"}}>
           <Typography variant="h4" align="center" sx={{fontWeight: "bold"}}>I'm the parent of a hospitalized child</Typography>
           <Typography variant="h5" align="center" sx={{fontWeight: "bold"}}>If you are the parent of a hospitalized child,</Typography>
           </Box>
         </Box>
 
-        <Box id="4" sx={{border: "4px solid", borderColor: "purple", borderRadius: '10px', marginBottom: "5%"}}>
+        <Box id="4" sx={{border: "4px solid", borderColor: "#44556B", borderRadius: '10px', marginBottom: "5%"}}>
           <Box sx={{margin: "2% 5% 2% 5%"}}>
           <Typography variant="h4" align="center" sx={{fontWeight: "bold"}}>I'm a friend/family member of a patient</Typography>
           <br/>
@@ -231,7 +224,7 @@ function States() {
           </Box>
         </Box>
 
-        <Box id="5" sx={{border: "4px solid", borderColor: "purple", borderRadius: '10px', marginBottom: "5%"}}>
+        <Box id="5" sx={{border: "4px solid", borderColor: "#44556B", borderRadius: '10px', marginBottom: "5%"}}>
           <Box sx={{margin: "2% 5% 2% 5%"}}>
           <Typography variant="h4" align="center" sx={{fontWeight: "bold"}}>I'm a recently discharged patient</Typography>
           <br/>
@@ -264,7 +257,7 @@ function States() {
           </Box>
         </Box>
 
-        <Box id="6" sx={{border: "4px solid", borderColor: "purple", borderRadius: '10px', marginBottom: "5%"}}>
+        <Box id="6" sx={{border: "4px solid", borderColor: "#44556B", borderRadius: '10px', marginBottom: "5%"}}>
           <Box sx={{margin: "2% 5% 2% 5%"}}>
           <Typography variant="h4" align="center" sx={{fontWeight: "bold"}}>I'm worried I may become hospitalized</Typography>
           <br/>

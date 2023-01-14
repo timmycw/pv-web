@@ -15,11 +15,14 @@ import {styled} from '@mui/material/styles';
 import Deadlines from '../../components/Deadlines';
 
 
-const deadlines = ["tuesday", "NOV 1", 
-"LATE VOTE-BY-MAIL STARTS", "Patients may start voting in hospitals.",
-"tuesday", "NOV 8", 
-"EMERGENCY ABSENTEE BALLOT APPLICATION DEADLINE AND BALLOT DEADLINE", 
-"The deadline for the application and ballot are the same; however, we recommend you return your ballot application earlier than the deadline to allow for turnaround time."];
+const deadlines = ["wednesday", "NOV 2", 
+"EMERGENCY APPLICATION START", "Patients may start voting in hospitals.",
+"tuesday 8PM", "NOV 8", 
+"EMERGENCY APPLICATION DEADLINE", 
+"Completed application must be returned to your local Town Clerk. Check addresses at tinyurl.com/544ek23d.",
+"tuesday 7PM", "NOV 8",
+"EMERGENCY BALLOT DEADLINE",
+"Voted ballot must be returned to your local Town Clerk."];
 
 
 const CheckIcon = styled(CheckBoxIcon)(({ theme }) => ({
@@ -32,13 +35,13 @@ const DangerIcon = styled(DangerousIcon)(({ theme }) => ({
   fill: 'red'
 }));
 
-function California() {
+function Connecticut() {
   return (
     <div className="Body">
         <Box sx={{display: "flex", justifyContent: "space-between", backgroundColor: "#44556B"}}>
             <Box sx={{display: "flex", justifyContent: "left", margin: "2%", width: "50%"}}>
                 <Box sx={{margin: "2%"}}>
-                    <Typography variant="h3" sx={{color: '#f56c49', fontWeight: "bold"}}>CALIFORNIA</Typography>
+                    <Typography variant="h3" sx={{color: '#f56c49', fontWeight: "bold"}}>CONNECTICUT</Typography>
                     <Typography variant="h6" sx={{color: '#f56c49'}}>PATIENT VOTING PROCESS</Typography>
                 </Box>
             </Box>
@@ -46,26 +49,35 @@ function California() {
                 <img src={logo} width="80%"/>
             </Box>
         </Box>
-        <br/>
-            <Deadlines {...deadlines}></Deadlines>
-        <br/>
+        <br/><br/>
+        {/*<Box sx={{display: "flex", justifyContent: "left"}}>
+            <Box sx={{display: "flex", width: "50%", height: "50%", justifyContent: "center", backgroundColor: "#ffbb99", transform: "rotate(270deg) translateX(-200px)"}}>
+                <Typography variant="h4" sx={{color: "white"}}>DEADLINES OF NOTE</Typography>
+  </Box>*/}
+           
+            <Box sx={{width: "100%"}}>
+            <br/>
+                <Deadlines {...deadlines}></Deadlines>
+            <br/>
+            </Box>
+        {/*</Box>*/}
         
-        <br/>
+        <br/><br/>
         <Typography fontSize="18px" >
-            If you are hospitalized between <b>November 1st and November 8th</b>, you are eligible to vote by the following steps:
+            If you are hospitalized between <b>November 2nd and November 8th</b>, you are eligible to vote by following these steps:
         
         
         <List sx={{ listStyleType: "none", pl: 4, '& .MuiListItem-root': {display: 'list-item'} }}>
             <ListItem>
                 1. Check your voter registration at <a href="patientvoting.com/check"> www.patientvoting.com/check</a>.
             </ListItem>
-            <ListItem>2. Complete a late vote-by-mail ballot application available <a href="https://www.sos.ca.gov/elections/voter-registration/vote-mail/#late">sos.ca.gov/elections/voter-registration/vote-mail/#late</a> or on our site.
+            <ListItem>2. Complete emergency ballot application.
                 <List>
                     <ListItem>
                         <Box sx={{ display: "flex", alignItems: "center"}}>
                             <CheckIcon/>
                             <ListItem>
-                                Under 'statement and authorization' you must select an authorized representative to obtain your ballot and deliver it to you.
+                                The application is available to print in both English and Spanish: <a href="tinyurl.com/2s3f4cv4">tinyurl.com/2s3f4cv4</a>.
                             </ListItem>
                         </Box>
                     </ListItem>
@@ -73,7 +85,7 @@ function California() {
                         <Box sx={{ display: "flex", alignItems: "center"}}>
                             <CheckIcon/>
                             <ListItem>
-                                The late vote-by-mail application is available in English, Spanish, Chinese, Hindi, Japanese, Khmer, Korean, Tagalog, Thai, and Vietnamese.
+                                Applications are also available in most Town Clerk offices.
                             </ListItem>
                         </Box>
                     </ListItem>
@@ -81,49 +93,72 @@ function California() {
                 </List>
                 
             </ListItem>
-            <ListItem>3. Return ballot application to the county election official by your authorized representative. Their addresses
-                are attached to the late vote-by-mail application.
+            <ListItem>3. Return ballot application to Board of Canvassers by <b>November 8th 8PM</b>. Check 
+            <a href="tinyurl.com/544ek23d"> tinyurl.com/544ek23d</a> for addresses. You may 
+            deliver your ballot application:
                 
                 <List>
                     <ListItem>
                         <Box sx={{ display: "flex", alignItems: "center"}}>
                             <CheckIcon/>
                             <ListItem>
-                                By authorized representative. "This application must be provided in person to the county elections official
-                                by the voter or the voter's representative."
+                                By authorized agent, such as a family member. 
                             </ListItem>
                         </Box>
                     </ListItem>
+                    
+                    <ListItem>
+                        <Box sx={{ display: "flex", alignItems: "center"}}>
+                            <CautionIcon/>
+                            <ListItem>By mail. Depending on when you're hospitalized, if you submit your ballot application by mail, it may
+                                not arrive in time to the BOE by the required deadline.
+                            </ListItem>
+                        </Box>
+                    </ListItem>
+
                     <ListItem>
                         <Box sx={{ display: "flex", alignItems: "center"}}>
                             <DangerIcon/>
-                            <ListItem>Do not return late vote-by-mail application by mail. There is no electronic submission of applications/ballots in California.
+                            <ListItem>There is no electronic submission of applications allowed in Connecticut.
                             </ListItem>
                         </Box>
                     </ListItem>
                     
                 </List>
             </ListItem>
-            <ListItem>4. Receive ballot and vote.</ListItem> 
-            <ListItem>5. Your authorized representative must return completed ballot to county election official by <b>November 8th</b> at 8PM.
+            <ListItem>4. Receive your ballot:
                 <List>
+
                     <ListItem>
                         <Box sx={{ display: "flex", alignItems: "center"}}>
                             <CheckIcon/>
-                            <ListItem>
-                                The late vote-by-mail option applies to all healthcare workers and family members of hospitalized patients.
+                            <ListItem>By authorized agent, such as famliy member.
                             </ListItem>
                         </Box>
                     </ListItem>
+
                     <ListItem>
                         <Box sx={{ display: "flex", alignItems: "center"}}>
                             <CheckIcon/>
-                            <ListItem> No notary or physical affidavit is required in California for hospitalized voters.
+                            <ListItem>By in-person team from the registrar of voters.
+                            </ListItem>
+                        </Box>
+                    </ListItem>
+
+                    <ListItem>
+                        <Box sx={{ display: "flex", alignItems: "center"}}>
+                            <CautionIcon/>
+                            <ListItem>By mail. Depending on when you're hospitalized, if you request your ballot by mail, it may not arrive in time.
                             </ListItem>
                         </Box>
                     </ListItem>
                     
                 </List>
+            </ListItem> 
+            <ListItem>5. Vote!</ListItem> 
+            <ListItem>6. Return completed ballot to Board of Canvassers by <b>November 8th 8PM</b> by authorized agent or
+            in-person team from the registrar of voters. Check <a href="tinyurl.com/544ek23d">tinyurl.com/544ek23d</a> for addresses.
+                
             </ListItem>
             
         </List>
@@ -132,4 +167,4 @@ function California() {
   );
 }
 
-export default California;
+export default Connecticut;
