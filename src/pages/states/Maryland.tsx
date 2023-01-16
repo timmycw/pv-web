@@ -16,12 +16,12 @@ import {styled} from '@mui/material/styles';
 import Deadlines from '../../components/Deadlines';
 
 
-const deadlines = ["thursday", "OCT 15", 
+const deadlines = ["friday", "OCT 30", 
 "EMERGENCY APPLICATION START", "Patients may start voting in hospitals",
-"monday", "NOV 2", 
-"EMERGENCY APPLICATION DEADLINE", "You may request a ballot by sending an official Absentee Ballot Request (before Oct 30th) or contacting your county auditor directy (after Oct 30th and until Nov 2nd)",
 "tuesday 8PM", "NOV 3", 
-"EMERGENCY BALLOT DEADLINE", "Voted ballot must be returned to your county auditor. Addresses can be found at https://sos.iowa.gov/elections/auditors/auditorslist.html"];
+"EMERGENCY APPLICATION DEADLINE", "Completed application must be returned to your county Board of Elections. Check addresses at https://elections.maryland.gov/about/county_boards.html",
+"tuesday 8PM", "NOV 3", 
+"EMERGENCY BALLOT DEADLINE", "Voted ballot must be returned to your county Board of Elections"];
 
 
 const CheckIcon = styled(CheckBoxIcon)(({ theme }) => ({
@@ -40,7 +40,7 @@ function Maryland() {
        <Box sx={{display: "flex", justifyContent: "space-between", backgroundColor: "#44556B"}}>
             <Box sx={{display: "flex", justifyContent: "left", margin: "2%", width: "50%"}}>
                 <Box sx={{margin: "2%"}}>
-                    <Typography variant="h3" sx={{color: '#f56c49', fontWeight: "bold"}}>Maryland</Typography>
+                    <Typography variant="h3" sx={{color: '#f56c49', fontWeight: "bold"}}>MARYLAND</Typography>
                     <Typography variant="h6" sx={{color: '#f56c49'}}>PATIENT VOTING PROCESS</Typography>
                 </Box>
             </Box>
@@ -54,21 +54,29 @@ function Maryland() {
         
         <br/>
         <Typography fontSize="18px" >
-            If you are hospitalized <b>before November 1st</b>, you are eligible to vote by the following steps:
+            If you are <b>hospitalized between October 30th and November 3rd</b>, you are eligible to vote by the following steps:
         
         
         <List sx={{ listStyleType: "none", pl: 4, '& .MuiListItem-root': {display: 'list-item'} }}>
             <ListItem>
                 1. Check your voter registration at <a href="patientvoting.com/check"> www.patientvoting.com/check</a>.
             </ListItem>
-            <ListItem>2. Complete an application for your emergency absentee ballot.
+            <ListItem>2. Complete absentee ballot application:
 
                 <List>
                     <ListItem>
                         <Box sx={{ display: "flex", alignItems: "center"}}>
+                            <CheckIcon/>
+                            <ListItem>
+                               Fill out the <b>Maryland Application for an Absentee Ballot</b>, where you may also choose how you would like to received your ballot in question #6.
+                            </ListItem>
+                        </Box>
+                    </ListItem> 
+                    <ListItem>
+                        <Box sx={{ display: "flex", alignItems: "center"}}>
                             <CautionIcon/>
                             <ListItem>
-                               The method for submitting your application will be different depending on whether or not you are hospitalized before or after Oct 30th (please see step 3).
+                               In order to submit your application via an agent, you and your agent must also fill out the <b>Designation of Agent Form</b>.
                             </ListItem>
                         </Box>
                     </ListItem> 
@@ -76,34 +84,31 @@ function Maryland() {
                 
                 
             </ListItem>
-            <ListItem>3. Return ballot application to your county auditor by <b>November 2nd 4PM</b>. Addresses can be found at   
-            <a href="https://sos.iowa.gov/elections/auditors/auditorslist.html"> sos.iowa.gov/elections/auditors/auditorslist.html</a>. You may deliver your ballot application:
+            <ListItem>3. Return ballot application to your county Board of Elections with enough time to return your ballot by <b>November 3rd 8PM</b>. 
+                Check <a href="https://elections.maryland.gov/about/county_boards.html">elections.maryland.gov/about/county_boards.html</a> for addresses. You may deliver your ballot application:
 
                 <List>
                     <ListItem>
                         <Box sx={{ display: "flex", alignItems: "center"}}>
                             <CheckIcon/>
                             <ListItem>
-                                By authorized agent (ex. family member, although anyone may serve as your agent in Iowa). 
-                                You are able to use this option up until <b>October 30th 5PM</b>.
-
+                                By authorized agent, such as a family member. However, Maryland allows anybody to serve as your authorized agent.
                             </ListItem>
                         </Box>
                     </ListItem>
                     <ListItem>
                         <Box sx={{ display: "flex", alignItems: "center"}}>
-                            <CautionIcon/>
+                            <DangerIcon/>
                             <ListItem>
-                                By mail. You are able to use this option up until <b>October 30th 5PM</b>. Depending on when you're 
-                                hospitalized, if you submit your ballot application by mail, it may not arrive in time to the BOE by the required deadline.
+                                There is no submission of applications by mail allowed in Maryland.
                             </ListItem>
                         </Box>
                     </ListItem>
                     <ListItem>
                         <Box sx={{ display: "flex", alignItems: "center"}}>
-                            <CheckIcon/>
+                            <DangerIcon/>
                             <ListItem>
-                               By phone. You are able to call your county auditor directly to request an absentee ballot if you are hospitalized on <b>Oct 31st or later</b>.
+                               There is no electronic submission of applications allowed in Maryland.
                             </ListItem>
                         </Box>
                     </ListItem>
@@ -111,15 +116,11 @@ function Maryland() {
        
                 </List>
             </ListItem>
-            <ListItem>4. Receive ballot. If you are hospitalized in the same county as your normal residence, you will 
-                obtain your ballot through a bipartisan in-person ballot delivery team. Otherwise, you may obtain your ballot 
-                through your authorized agent.
-
+            <ListItem>4. Receive ballot through your authorized agent or, on a case-by-case basis, electronically by email.
             </ListItem>
             <ListItem>5. Vote!</ListItem>
-            <ListItem>6. Return completed ballot to your county auditor by Nov 3rd 8PM by mail, your authorized agent, 
-                or your ballot delivery team (who will automatically deliver your ballot to be counted). Check  
-                <a href="https://sos.iowa.gov/elections/auditors/auditorslist.html">sos.iowa.gov/elections/auditors/auditorslist.html</a> for addresses.
+            <ListItem>6. Return completed ballot to your county Board of Elections by <b>November 3rd 8PM</b> by authorized agent or mail. 
+            Check <a href="https://elections.maryland.gov/about/county_boards.html">elections.maryland.gov/about/county_boards.html</a> for addresses.
             </ListItem>
         </List>
         </Typography>

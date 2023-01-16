@@ -52,7 +52,7 @@ function Alaska() {
         
         <br/>
         <Typography fontSize="18px" >
-            If you are hospitalized between <b>October 19th and November 3rd</b>, you are eligible to vote by the following steps:
+            If you are <b>hospitalized between October 19th and November 3rd</b>, you are eligible to vote by the following steps:
         
         
         <List sx={{ listStyleType: "none", pl: 4, '& .MuiListItem-root': {display: 'list-item'} }}>

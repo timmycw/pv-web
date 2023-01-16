@@ -16,12 +16,12 @@ import {styled} from '@mui/material/styles';
 import Deadlines from '../../components/Deadlines';
 
 
-const deadlines = ["friday", "OCT 29", 
+const deadlines = ["saturday", "OCT 24", 
 "EMERGENCY APPLICATION START", "Patients may start voting in hospitals",
+"tuesday 7PM", "NOV 3", 
+"EMERGENCY APPLICATION DEADLINE", "Completed application must be returned to your county election office. Check addresses at https://sos.nebraska.gov/elections/election-officials-contact-information",
 "tuesday 8PM", "NOV 3", 
-"EMERGENCY APPLICATION DEADLINE", "Completed application must be returned to your Municipal Clerk. Check addresses at https://www.maine.gov/sos/cec/elec/munic.html",
-"tuesday 8PM", "NOV 3", 
-"EMERGENCY BALLOT DEADLINE", "Voted ballot must be returned to your Municipal Clerk"];
+"EMERGENCY BALLOT DEADLINE", "Voted ballot must be returned to your county election office"];
 
 
 const CheckIcon = styled(CheckBoxIcon)(({ theme }) => ({
@@ -34,13 +34,13 @@ const DangerIcon = styled(DangerousIcon)(({ theme }) => ({
   fill: 'red'
 }));
 
-function Maine() {
+function Nebraska() {
   return (
     <div className="Body">
        <Box sx={{display: "flex", justifyContent: "space-between", backgroundColor: "#44556B"}}>
             <Box sx={{display: "flex", justifyContent: "left", margin: "2%", width: "50%"}}>
                 <Box sx={{margin: "2%"}}>
-                    <Typography variant="h3" sx={{color: '#f56c49', fontWeight: "bold"}}>MAINE</Typography>
+                    <Typography variant="h3" sx={{color: '#f56c49', fontWeight: "bold"}}>NEBRASKA</Typography>
                     <Typography variant="h6" sx={{color: '#f56c49'}}>PATIENT VOTING PROCESS</Typography>
                 </Box>
             </Box>
@@ -54,20 +54,28 @@ function Maine() {
         
         <br/>
         <Typography fontSize="18px" >
-            If you are <b>hospitalized between October 29th and November 3rd</b>, you are eligible to vote by the following steps:
+            If you are <b>hospitalized between October 24th and November 3rd</b>, you are eligible to vote by the following steps:
         
         
         <List sx={{ listStyleType: "none", pl: 4, '& .MuiListItem-root': {display: 'list-item'} }}>
             <ListItem>
                 1. Check your voter registration at <a href="patientvoting.com/check"> www.patientvoting.com/check</a>.
             </ListItem>
-            <ListItem>2. Complete an absentee ballot application:
+            <ListItem>2. Complete an emergency absentee ballot application:
                 <List>
                     <ListItem>
                         <Box sx={{ display: "flex", alignItems: "center"}}>
                             <CheckIcon/>
                             <ListItem>
-                               Applications can be found starting 3 months before an election from your municipal clerk or from Maine's online portal
+                               You may fill out Nebraska's standardized <b>Early Voting Application</b>.
+                            </ListItem>
+                        </Box>
+                    </ListItem> 
+                    <ListItem>
+                        <Box sx={{ display: "flex", alignItems: "center"}}>
+                            <CheckIcon/>
+                            <ListItem>
+                               You may also prepare a written request with your residence address, the address to which the ballot is to be mailed, and your telephone number
                             </ListItem>
                         </Box>
                     </ListItem> 
@@ -75,31 +83,32 @@ function Maine() {
                 
                 
             </ListItem>
-            <ListItem>3. Return ballot application to your Municipal Clerk with enough time to return your ballot by <b>November 3rd 8PM</b>. 
-                Check <a href="https://www.maine.gov/sos/cec/elec/munic.html">maine.gov/sos/cec/elec/munic.html</a> for addresses. You may deliver your ballot application:
+            <ListItem>3. Return ballot application to your county election office by <b>November 3rd 7PM</b>. 
+            Check <a href="https://sos.nebraska.gov/elections/election-officials-contact-information">sos.nebraska.gov/elections/election-officials-contact-information</a> for addresses. You may deliver your ballot application:
 
                 <List>
                     <ListItem>
                         <Box sx={{ display: "flex", alignItems: "center"}}>
                             <CheckIcon/>
                             <ListItem>
-                                By authorized agent, such as a family member. However, Maine does not mandate your authorized agent to be a family member.
+                                By authorized agent, such as a family member. However, Nebraska allows anyone to serve as your authorized agent.
                             </ListItem>
                         </Box>
                     </ListItem>
                     <ListItem>
                         <Box sx={{ display: "flex", alignItems: "center"}}>
-                            <DangerIcon/>
+                            <CheckIcon/>
                             <ListItem>
-                                There is no submission of applications by mail allowed in Maine.
+                                You may alternatively submit your application electronically.
+
                             </ListItem>
                         </Box>
                     </ListItem>
                     <ListItem>
                         <Box sx={{ display: "flex", alignItems: "center"}}>
-                            <DangerIcon/>
+                            <CautionIcon/>
                             <ListItem>
-                               There is no electronic submission of applications allowed in Maine.
+                               By mail. Depending on when you're hospitalized, if you submit your ballot application by mail, it may not arrive in time to the BOE by the required deadline.
                             </ListItem>
                         </Box>
                     </ListItem>
@@ -107,11 +116,12 @@ function Maine() {
        
                 </List>
             </ListItem>
-            <ListItem>4. Receive your ballot through your authorized agent.
+            <ListItem>4. Receive your ballot through your authorized agent, mail, electronically, or by an in-person ballot delivery team sent by your county election office.
+
             </ListItem>
             <ListItem>5. Vote!</ListItem>
-            <ListItem>6. Return completed ballot to your Municipal Clerk by <b>November 3rd 8PM</b> by your authorized agent or mail. 
-            Check <a href="https://www.maine.gov/sos/cec/elec/munic.html">maine.gov/sos/cec/elec/munic.html</a> for addresses.
+            <ListItem>6. Return completed ballot to your county election office by <b>November 3rd 7PM</b> by authorized agent or mail. 
+                Check <a href="https://sos.nebraska.gov/elections/election-officials-contact-information">sos.nebraska.gov/elections/election-officials-contact-information</a> for addresses.
             </ListItem>
         </List>
         </Typography>
@@ -119,4 +129,4 @@ function Maine() {
   );
 }
 
-export default Maine;
+export default Nebraska;

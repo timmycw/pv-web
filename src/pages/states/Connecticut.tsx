@@ -64,7 +64,7 @@ function Connecticut() {
         
         <br/><br/>
         <Typography fontSize="18px" >
-            If you are hospitalized between <b>November 2nd and November 8th</b>, you are eligible to vote by following these steps:
+            If you are <b>hospitalized between November 2nd and November 8th</b>, you are eligible to vote by following these steps:
         
         
         <List sx={{ listStyleType: "none", pl: 4, '& .MuiListItem-root': {display: 'list-item'} }}>

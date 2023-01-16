@@ -52,7 +52,7 @@ function Alabama() {
         
         <br/>
         <Typography fontSize="18px" >
-            If you are hospitalized between November 3rd and November 8th, you are eligible to vote by the following steps:
+            If you are <b>hospitalized between November 3rd and November 8th</b>, you are eligible to vote by the following steps:
         
         
         <List sx={{ listStyleType: "none", pl: 4, '& .MuiListItem-root': {display: 'list-item'} }}>

@@ -48,6 +48,9 @@ function NavBar() {
               letterSpacing: '.3rem',
               color: '#f56c49',
               textDecoration: 'none',
+              '&:visited': {
+                color: '#f56c49'
+              }
             }}
           >
             PATIENT VOTING

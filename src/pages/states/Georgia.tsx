@@ -54,7 +54,7 @@ function Georgia() {
         
         <br/>
         <Typography fontSize="18px" >
-            If you are hospitalized <b>up to 5 days before the election</b>, you are eligible to vote by following these steps:
+            If you are <b>hospitalized up to 5 days before the election</b>, you are eligible to vote by following these steps:
         
         
         <List sx={{ listStyleType: "none", pl: 4, '& .MuiListItem-root': {display: 'list-item'} }}>

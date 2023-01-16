@@ -56,7 +56,7 @@ function Colorado() {
         
         <br/>
         <Typography fontSize="18px" >
-            If you are hospitalized <b>and need a replacement mail-in ballot</b>, you are eligible to vote by the following steps:
+            If you are <b>hospitalized and need a replacement mail-in ballot</b>, you are eligible to vote by the following steps:
         
         
         <List sx={{ listStyleType: "none", pl: 4, '& .MuiListItem-root': {display: 'list-item'} }}>

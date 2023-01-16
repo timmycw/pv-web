@@ -5,11 +5,21 @@ import Divider from '@mui/material/Divider';
 import process from '../images/process.png';
 import comparison from '../images/comparison.png';
 
+import pvpic1 from '../images/pvpic1.webp';
+import pvpic2 from '../images/pvpic2.webp';
+
 function HowItWorks() {
   return (
     <div className="Body">
         <Typography variant="h3" align="center" sx={{fontWeight: "bold"}}>How Does Patient Voting Work?</Typography>
       <br></br>
+      <Box sx={{display: "flex", justifyContent: "center"}}>
+        <img src={pvpic1} width="30%"></img>
+        <img src={pvpic2} width="30%"></img>
+      </Box>
+      <br/>
+      <Typography variant="body2" align="center">Patients voting from their hospital bed at Lenox Hill Hospital via Patient Voting partner organization Northwell Health Voting. Shared with patient permission.</Typography>
+      <br/><br/><br/>
       <Typography variant="body1">
         Patient Voting helps patients vote by using an <b>Emergency Absentee Ballot</b>. 
         An Emergency Absentee Ballot is available in most states, but few people have heard of it.

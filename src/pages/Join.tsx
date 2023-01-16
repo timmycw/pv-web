@@ -20,7 +20,7 @@ function Join() {
 
         <br></br>
         <Typography variant="body1">
-          Fill out the form below or email us directly at <a href="">patientvoting@gmail.com</a>.
+          Fill out the form below or email us directly at <a href="mailto:patientvoting@gmail.com">patientvoting@gmail.com</a>.
         </Typography>
         <br></br>
         <center><JoinForm/></center>

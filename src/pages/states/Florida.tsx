@@ -54,7 +54,7 @@ function Florida() {
         
         <br/>
         <Typography fontSize="18px" >
-            If you are hospitalized between <b>October 29th and November 7th</b>, you are eligible to vote by the following steps:
+            If you are <b>hospitalized between October 29th and November 7th</b>, you are eligible to vote by the following steps:
         
         
         <List sx={{ listStyleType: "none", pl: 4, '& .MuiListItem-root': {display: 'list-item'} }}>
@@ -84,9 +84,38 @@ function Florida() {
                 </List>
                 
             </ListItem>
-            <ListItem>3. Upon request, your County Recorder's office will send a special elections board to deliver your ballot.</ListItem>
-            <ListItem>4. Vote!</ListItem>
-            <ListItem>5. The special elections board will return your ballot by <b>8pm Tuesday, November 8th</b>.
+            <ListItem>3. Return ballot application to your county's Supervisor of Elections with sufficient time to return your ballot by <b>November 8th 7PM</b>.
+                    Check <a href="dos.myflorida.com/elections/contacts/supervisor-of-elections/">dos.myflorida.com/elections/contacts/supervisor-of-elections/</a> for addresses. You may deliver your ballot application:
+            
+                    <List>
+                    <ListItem>
+                        <Box sx={{ display: "flex", alignItems: "center"}}>
+                            <CheckIcon/>
+                            <ListItem>
+                                By authorized agent, such as family member. A voter can designate an immediate family member (the designee's spouse or the parent, child,
+                                grandparent, or sibling of the designee or of the designee's spouse) or the voter's legal guardian to request the ballot on their behalf.
+                            </ListItem>
+                        </Box>
+                    </ListItem>
+                    <ListItem>
+                        <Box sx={{ display: "flex", alignItems: "center"}}>
+                            <CautionIcon/>
+                            <ListItem>
+                                Some counties may allow you to submit your application via a call to your Supervisor of Elections, rather than sending an authorized agent in-person.
+                            </ListItem>
+                        </Box>
+                    </ListItem>
+                   
+                </List>
+            </ListItem>
+            <ListItem>4. Receive ballot. You may obtain your ballot through your agent or, in some counties, through an 
+                in-person team sent by your county's Supervisor of Elections. 
+            </ListItem>
+            <ListItem>5. Vote!
+
+            </ListItem>
+            <ListItem>6. Return completed ballot to Board of Canvassers by <b>November 8th 7PM</b> by your authorized agent
+            or by mail. Check <a href="dos.myflorida.com/elections/contacts/supervisor-of-elections/">dos.myflorida.com/elections/contacts/supervisor-of-elections/</a> for addresses.
             </ListItem>
         </List>
         </Typography>

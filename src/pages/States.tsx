@@ -72,12 +72,6 @@ function States() {
           <StateButton href="/States/Pennsylvania">Pennsylvania</StateButton>
           <StateButton href="/States/Rhode Island">Rhode Island</StateButton>
 
-          <StateButton href="/States/Ohio">Ohio</StateButton>
-          <StateButton href="/States/Oklahoma">Oklahoma</StateButton>
-          <StateButton href="/States/Oregon">Oregon</StateButton>
-          <StateButton href="/States/Pennsylvania">Pennsylvania</StateButton>
-          <StateButton href="/States/Rhode Island">Rhode Island</StateButton>
-
           <StateButton href="/States/South Carolina">South Carolina</StateButton>
           <StateButton href="/States/South Dakota">South Dakota</StateButton>
           <StateButton href="/States/Tennessee">Tennessee</StateButton>

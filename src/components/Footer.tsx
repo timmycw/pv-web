@@ -2,6 +2,9 @@ import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Paper from "@mui/material/Paper";
+import Button from '@mui/material/Button';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
 
 
 function Footer() {
@@ -16,10 +19,11 @@ function Footer() {
             my:1
           }}
         >
-          <Typography variant="h6">Contact patientvoting@gmail.com for more info</Typography>
+          <Typography variant="body1">Contact <a href="mailto:patientvoting@gmail.com">patientvoting@gmail.com</a> for more info</Typography>
           <br/>
           <br/>
-          <Typography variant="h6">Follow us at</Typography>
+          <br/>
+          
         </Box>
 
         <Box
@@ -27,12 +31,18 @@ function Footer() {
             flexGrow: 1,
             justifyContent: "center",
             display: "flex",
-            mb: 2,
+            my: 1,
           }}
         >
-          <Typography variant="caption" color="initial">
-            Copyright ©2022. [] Limited
+          <Typography variant="body1" color="initial">
+            Follow us at: 
           </Typography>
+          &nbsp;
+          <a href="https://www.facebook.com/patientvoting"><FacebookIcon/></a>
+          &nbsp;
+          <a href="https://twitter.com/patientvoting"><TwitterIcon/></a>
+          
+
         </Box>
       </Container>
     </Paper>

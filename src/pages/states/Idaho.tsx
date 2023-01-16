@@ -54,7 +54,7 @@ function Idaho() {
         
         <br/>
         <Typography fontSize="18px" >
-            If you are hospitalized <b>before November 1st</b>, you are eligible to vote by the following steps:
+            If you are <b>hospitalized before November 1st</b>, you are eligible to vote by the following steps:
         
         
         <List sx={{ listStyleType: "none", pl: 4, '& .MuiListItem-root': {display: 'list-item'} }}>

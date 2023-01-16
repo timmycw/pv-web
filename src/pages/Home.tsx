@@ -87,10 +87,25 @@ function Home() {
       <br></br>
       <br></br>
     
-
       <Testimonials />
       <br></br>
       <br></br>
+      <Box sx={{display: "flex", width: "100%", justifyContent: "center"}}>
+        <Typography variant="body1" align="center" sx={{width: "50%"}}>Want to represent your state or hospital? 
+        We need doctors, nursing, social workers, physical therapists, case management, and volunteers. 
+        If you work in a hospital or health care facility, we need you.</Typography>
+      </Box>
+      <br/>
+      <Box textAlign="center">
+      <Button href="/Join" size="large" color="secondary" variant="outlined" sx={{border: "2px solid",
+          "&:hover": {
+                border: "2px solid"
+              }}}> Join </Button>
+      </Box>
+
+            
+      
+      
     </div>
   );
 }

@@ -35,6 +35,23 @@ import Maine from './pages/states/Maine';
 import Maryland from './pages/states/Maryland';
 import Massachusetts from './pages/states/Massachusetts';
 import Michigan from './pages/states/Michigan';
+import Minnesota from './pages/states/Minnesota';
+import Mississippi from './pages/states/Mississippi';
+import Missouri from './pages/states/Missouri';
+import Montana from './pages/states/Montana';
+import Nebraska from './pages/states/Nebraska';
+import Nevada from './pages/states/Nevada';
+import NewHampshire from './pages/states/NewHampshire';
+import NewJersey from './pages/states/NewJersey';
+import NewMexico from './pages/states/NewMexico';
+import NewYork from './pages/states/NewYork';
+import NorthCarolina from './pages/states/NorthCarolina';
+import NorthDakota from './pages/states/NorthDakota';
+import Ohio from './pages/states/Ohio';
+import Oklahoma from './pages/states/Oklahoma';
+import Oregon from './pages/states/Oregon';
+import Pennsylvania from './pages/states/Pennsylvania';
+import RhodeIsland from './pages/states/RhodeIsland';
 
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 
@@ -116,6 +133,23 @@ function App() {
           <Route path="/States/Maryland" element={<Maryland />} />
           <Route path="/States/Massachusetts" element={<Massachusetts />} />
           <Route path="/States/Michigan" element={<Michigan />} />
+          <Route path="/States/Minnesota" element={<Minnesota />} />
+          <Route path="/States/Mississippi" element={<Mississippi />} />
+          <Route path="/States/Missouri" element={<Missouri />} />
+          <Route path="/States/Montana" element={<Montana />} />
+          <Route path="/States/Nebraska" element={<Nebraska />} />
+          <Route path="/States/Nevada" element={<Nevada />} />
+          <Route path="/States/New Hampshire" element={<NewHampshire />} />
+          <Route path="/States/New Jersey" element={<NewJersey />} />
+          <Route path="/States/New Mexico" element={<NewMexico />} />
+          <Route path="/States/New York" element={<NewYork />} />
+          <Route path="/States/North Carolina" element={<NorthCarolina />} />
+          <Route path="/States/North Dakota" element={<NorthDakota />} />
+          <Route path="/States/Ohio" element={<Ohio />} />
+          <Route path="/States/Oklahoma" element={<Oklahoma />} />
+          <Route path="/States/Oregon" element={<Oregon />} />
+          <Route path="/States/Pennsylvania" element={<Pennsylvania />} />
+          <Route path="/States/RhodeIsland" element={<RhodeIsland />} />
 
         </Routes>   
         <Footer/>

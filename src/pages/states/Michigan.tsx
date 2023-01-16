@@ -16,12 +16,12 @@ import {styled} from '@mui/material/styles';
 import Deadlines from '../../components/Deadlines';
 
 
-const deadlines = ["thursday", "OCT 15", 
+const deadlines = ["friday 4PM", "NOV 4", 
 "EMERGENCY APPLICATION START", "Patients may start voting in hospitals",
-"monday", "NOV 2", 
-"EMERGENCY APPLICATION DEADLINE", "You may request a ballot by sending an official Absentee Ballot Request (before Oct 30th) or contacting your county auditor directy (after Oct 30th and until Nov 2nd)",
-"tuesday 8PM", "NOV 3", 
-"EMERGENCY BALLOT DEADLINE", "Voted ballot must be returned to your county auditor. Addresses can be found at https://sos.iowa.gov/elections/auditors/auditorslist.html"];
+"tuesday 4PM", "NOV 8", 
+"EMERGENCY APPLICATION DEADLINE", "A written request for the emergency absentee ballot to your city or township clerk's office before 4PM on election day.",
+"tuesday 8PM", "NOV 8", 
+"EMERGENCY BALLOT DEADLINE", "Emergency ballots must be returned to the clerk's office by 8PM on election day. Clerks info at mi.gov/vote"];
 
 
 const CheckIcon = styled(CheckBoxIcon)(({ theme }) => ({
@@ -40,7 +40,7 @@ function Michigan() {
        <Box sx={{display: "flex", justifyContent: "space-between", backgroundColor: "#44556B"}}>
             <Box sx={{display: "flex", justifyContent: "left", margin: "2%", width: "50%"}}>
                 <Box sx={{margin: "2%"}}>
-                    <Typography variant="h3" sx={{color: '#f56c49', fontWeight: "bold"}}>Michigan</Typography>
+                    <Typography variant="h3" sx={{color: '#f56c49', fontWeight: "bold"}}>MICHIGAN</Typography>
                     <Typography variant="h6" sx={{color: '#f56c49'}}>PATIENT VOTING PROCESS</Typography>
                 </Box>
             </Box>
@@ -54,72 +54,69 @@ function Michigan() {
         
         <br/>
         <Typography fontSize="18px" >
-            If you are hospitalized <b>before November 1st</b>, you are eligible to vote by the following steps:
-        
+            If you are <b>hospitalized between November 4th at 5PM and Election Day on November 8th</b>, you are eligible to vote by the following steps:
+
+            
+                    <ListItem>
+                        <Box sx={{ display: "flex", alignItems: "center"}}>
+                            <CheckIcon/>
+                            <ListItem>
+                               You are also eligible if a family death or illness that requires you to leave your community for the entire time the polls are open on election day.
+                            </ListItem>
+                        </Box>
+                    </ListItem> 
+                
+            
         
         <List sx={{ listStyleType: "none", pl: 4, '& .MuiListItem-root': {display: 'list-item'} }}>
             <ListItem>
                 1. Check your voter registration at <a href="patientvoting.com/check"> www.patientvoting.com/check</a>.
             </ListItem>
-            <ListItem>2. Complete an application for your emergency absentee ballot.
+            <ListItem>2. Print a regular absentee ballot application from our Michigan state page
+                or at: <a href="https://www.michigan.gov/documents/sos/AVApp_535884_7.pdf">michigan.gov/documents/sos/AVApp_535884_7.pdf</a>.
+                <br/><br/>
+                You may download the regular absentee application from online and write 'Emergency' on the top of the regular absentee ballot application.
 
+                
                 <List>
                     <ListItem>
                         <Box sx={{ display: "flex", alignItems: "center"}}>
-                            <CautionIcon/>
+                            <CheckIcon/>
                             <ListItem>
-                               The method for submitting your application will be different depending on whether or not you are hospitalized before or after Oct 30th (please see step 3).
+                               Additionally, we recommend an additional piece of paper for clarity, with the following written: 
+                               "I have been unexpectedly hospitalized at [NAME OF] Hospital starting on [DATE] and expect that I will be unable to make it to the polls on Election Day. I am requesting an Emergency Absentee Ballot."
                             </ListItem>
                         </Box>
                     </ListItem> 
                 </List>
                 
-                
+                The patient needs to designate an authorized representative, who must complete Section 5 of the 2022 Michigan 
+                Absent Voter Ballot Application stating "...I am delivering the absentee voter ballot application of [PATIENT NAME] 
+                at his or her request..."
+
             </ListItem>
-            <ListItem>3. Return ballot application to your county auditor by <b>November 2nd 4PM</b>. Addresses can be found at   
-            <a href="https://sos.iowa.gov/elections/auditors/auditorslist.html"> sos.iowa.gov/elections/auditors/auditorslist.html</a>. You may deliver your ballot application:
+            <ListItem>3. Your authorized representative must deliver the above to your city or township clerk's office before 
+                4 p.m. on election day. Find your clerks address at: <a href="mi.gov/vote">mi.gov/vote</a>.
 
                 <List>
                     <ListItem>
                         <Box sx={{ display: "flex", alignItems: "center"}}>
-                            <CheckIcon/>
+                            <DangerIcon/>
                             <ListItem>
-                                By authorized agent (ex. family member, although anyone may serve as your agent in Iowa). 
-                                You are able to use this option up until <b>October 30th 5PM</b>.
+                                There is no mail submission of emergency application/ballots in Michigan.
+
 
                             </ListItem>
                         </Box>
                     </ListItem>
-                    <ListItem>
-                        <Box sx={{ display: "flex", alignItems: "center"}}>
-                            <CautionIcon/>
-                            <ListItem>
-                                By mail. You are able to use this option up until <b>October 30th 5PM</b>. Depending on when you're 
-                                hospitalized, if you submit your ballot application by mail, it may not arrive in time to the BOE by the required deadline.
-                            </ListItem>
-                        </Box>
-                    </ListItem>
-                    <ListItem>
-                        <Box sx={{ display: "flex", alignItems: "center"}}>
-                            <CheckIcon/>
-                            <ListItem>
-                               By phone. You are able to call your county auditor directly to request an absentee ballot if you are hospitalized on <b>Oct 31st or later</b>.
-                            </ListItem>
-                        </Box>
-                    </ListItem>
-                   
-       
-                </List>
+                        
+                  </List>
             </ListItem>
-            <ListItem>4. Receive ballot. If you are hospitalized in the same county as your normal residence, you will 
-                obtain your ballot through a bipartisan in-person ballot delivery team. Otherwise, you may obtain your ballot 
-                through your authorized agent.
+            <ListItem>4. Receive ballot from your authorized agent.
 
             </ListItem>
             <ListItem>5. Vote!</ListItem>
-            <ListItem>6. Return completed ballot to your county auditor by Nov 3rd 8PM by mail, your authorized agent, 
-                or your ballot delivery team (who will automatically deliver your ballot to be counted). Check  
-                <a href="https://sos.iowa.gov/elections/auditors/auditorslist.html">sos.iowa.gov/elections/auditors/auditorslist.html</a> for addresses.
+            <ListItem>6. Return completed ballot to Board of Canvassers by <b>Election Day on November 8th 8PM</b> by authorized agent.
             </ListItem>
         </List>
         </Typography>

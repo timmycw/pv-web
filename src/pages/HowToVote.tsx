@@ -13,7 +13,7 @@ function States() {
         <Typography variant="body1" align="center">If you're just looking for state-specific patient voting information:</Typography>
         <br/>
         <Box sx={{display: "flex", justifyContent: "center"}}>
-          <Button href="/States" size="large" color="secondary" variant="outlined" sx={{width: "50%", border: "2px solid", 
+          <Button href="/States" size="large" variant="outlined" sx={{width: "50%", border: "2px solid", color: "#3071DD",
               "&:hover": {            
               border: "2px solid"
             }}}> Find your state </Button>
@@ -26,47 +26,47 @@ function States() {
 
         <div className="button-grid">
           <Box sx={{ width: "47%", marginBottom: "1%"}}>
-            <Button href="#1" size="large" color="secondary" variant="outlined" 
-            sx={{width: "100%", border: "2px solid", 
+            <Button href="#1" size="large" variant="outlined" 
+            sx={{width: "100%", border: "2px solid", color: "#3071DD",
               "&:hover": {           
               border: "2px solid"
             }}}> I'm a hospitalized patient</Button>
-          <center><a href="#1"><ArrowDropDownRoundedIcon color="secondary" fontSize="large"/></a></center>
+          <center><a href="#1"><ArrowDropDownRoundedIcon fontSize="large" sx={{color: "#3071DD"}}/></a></center>
           </Box>
           <Box sx={{width: "47%", marginBottom: "1%"}}>
-            <Button href="#2" size="large" color="secondary" variant="outlined" sx={{width: "100%", border: "2px solid", 
+            <Button href="#2" size="large" variant="outlined" sx={{width: "100%", border: "2px solid", color: "#3071DD",
               "&:hover": {            
               border: "2px solid"
             }}}> I'm a healthcare provider of the patient </Button>
-            <center><a href="#2"><ArrowDropDownRoundedIcon color="secondary" fontSize="large"/></a></center>
+            <center><a href="#2"><ArrowDropDownRoundedIcon fontSize="large" sx={{color: "#3071DD"}}/></a></center>
           </Box>
           <Box sx={{width: "47%", marginBottom: "1%"}}> 
-            <Button href="#3" size="large" color="secondary" variant="outlined" sx={{width: "100%", border: "2px solid", 
+            <Button href="#3" size="large" variant="outlined" sx={{width: "100%", border: "2px solid", color: "#3071DD",
               "&:hover": {          
               border: "2px solid"
             }}}> I'm the parent of a hospitalized child </Button>
-            <center><a href="#3"><ArrowDropDownRoundedIcon color="secondary" fontSize="large"/></a></center>
+            <center><a href="#3"><ArrowDropDownRoundedIcon fontSize="large" sx={{color: "#3071DD"}}/></a></center>
           </Box>
           <Box sx={{width: "47%", marginBottom: "1%"}}>
-            <Button href="#4" size="large" color="secondary" variant="outlined" sx={{width: "100%", border: "2px solid", 
+            <Button href="#4" size="large" variant="outlined" sx={{width: "100%", border: "2px solid", color: "#3071DD",
               "&:hover": {        
               border: "2px solid"
             }}}> I'm a friend/family member of the patient </Button>
-            <center><a href="#4"><ArrowDropDownRoundedIcon color="secondary" fontSize="large"/></a></center>
+            <center><a href="#4"><ArrowDropDownRoundedIcon fontSize="large" sx={{color: "#3071DD"}}/></a></center>
           </Box>
           <Box sx={{width: "47%", marginBottom: "1%"}}>
-            <Button href="#5" size="large" color="secondary" variant="outlined" sx={{width: "100%", border: "2px solid", 
+            <Button href="#5" size="large" variant="outlined" sx={{width: "100%", border: "2px solid", color: "#3071DD",
               "&:hover": {   
               border: "2px solid"
             }}}> I'm a recently discharged patient </Button>
-            <center><a href="#5"><ArrowDropDownRoundedIcon color="secondary" fontSize="large"/></a></center>
+            <center><a href="#5"><ArrowDropDownRoundedIcon fontSize="large" sx={{color: "#3071DD"}}/></a></center>
           </Box>
           <Box sx={{width: "47%", marginBottom: "1%"}}>
-            <Button href="#6" size="large" color="secondary" variant="outlined" sx={{width: "100%", border: "2px solid", 
+            <Button href="#6" size="large" variant="outlined" sx={{width: "100%", border: "2px solid", color: "#3071DD",
               "&:hover": {
               border: "2px solid"
             }}}> I'm worried I may become hospitalized </Button>
-            <center><a href="#6"><ArrowDropDownRoundedIcon color="secondary" fontSize="large"/></a></center>
+            <center><a href="#6"><ArrowDropDownRoundedIcon fontSize="large" sx={{color: "#3071DD"}}/></a></center>
           </Box>
 
         </div>
